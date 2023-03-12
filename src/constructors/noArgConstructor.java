@@ -14,8 +14,9 @@ class noArgConstructor {
             // Invoke default constructor.
             noArgConstructor geek1 = new noArgConstructor();
 
-            // Default constructor provides the default values to the object like 0, null
+            // Default constructor provides the defaHult values to the object like 0, null
             System.out.println(geek1.name);
             System.out.println(geek1.num);
+
         }
 }
