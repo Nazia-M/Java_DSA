@@ -1,6 +1,6 @@
 package stringPrograms;
 
-public class ReverseString {
+public class ReverseChar {
 
     public static void main(String[] args) {
 
