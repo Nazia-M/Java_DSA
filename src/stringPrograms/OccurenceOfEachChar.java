@@ -1,9 +1,7 @@
-package stringClass;
+package stringPrograms;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.SortedMap;
 
 public class OccurenceOfEachChar {
 
