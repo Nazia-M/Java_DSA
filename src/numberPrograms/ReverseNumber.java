@@ -20,7 +20,5 @@ public class ReverseNumber {
         if(negative==true)
             rev = ~(rev - 1);
         System.out.println(rev);
-
-
     }
 }
