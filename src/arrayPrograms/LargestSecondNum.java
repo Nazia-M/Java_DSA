@@ -5,23 +5,23 @@ import java.sql.SQLOutput;
 public class LargestSecondNum {
 
     public static void main(String[] args) {
-        int a[]={13,24,54,62,52,21,60};
-        int len = a.length;
-        int temp;
+        int arr[]={13,24,54,62,52,21,60};
+        int largest=0, secondLargest=0;
 
         //Linear Search
-        for (int i=0; i<len; i++)
+        for (int i=0; i<arr.length; i++)
         {
-            for (int j=i+1; j<len; j++)
+            if (arr[i] > largest)
             {
-                if (a[i] > a[j])
-                {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
+                secondLargest = largest;
+                largest = arr[i];
+            }
+            else if (arr[i] > secondLargest)
+            {
+                secondLargest = arr[i];
             }
         }
-        System.out.println("Second Largest:"+a[len-2]);
+        System.out.println("Second largest number is:" + secondLargest);
+        System.out.println("Largest Number is: "  +largest);
     }
 }
