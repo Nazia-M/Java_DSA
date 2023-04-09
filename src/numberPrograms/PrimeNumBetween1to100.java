@@ -14,14 +14,10 @@ public class PrimeNumBetween1to100 {
     {
         if(num<2)
             return false;
-        else
+        for(int i=2;i<num;i++)
         {
-            int x= num/2;
-            for(int i=2;i<x;i++)
-            {
-                if(num%i==0)
-                    return false;
-            }
+            if(num%i==0)
+                return false;
         }
         return true;
     }
