@@ -6,7 +6,7 @@ public class PrimeOrNot {
 
         //Number divisible only by 1 and itslef is a prime numer = 2,3,5,7,11,13,17,19,23,29 etc
 
-        int n=23, flag =0;
+        int n=2, flag =0;
         if(n == 0 || n == 1)
         {
             flag =1;
