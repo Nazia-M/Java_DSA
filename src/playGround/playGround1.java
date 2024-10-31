@@ -51,22 +51,67 @@ public class playGround1 {
 //        }
 
         //Number is prime or not
-        int n = 29;boolean isPrime = true;
+//        int n = 29;boolean isPrime = true;
+//
+//        if(n==0 || n==1)
+//            isPrime = false;
+//
+//        for(int i=2;i<n;i++){
+//            if(n%i == 0)
+//                isPrime = false;
+//            else
+//                isPrime = true;
+//        }
+//        if(isPrime == true)
+//            System.out.println("Prime");
+//        else
+//            System.out.println("Not prime");
 
-        if(n==0 || n==1)
-            isPrime = false;
+        //All prime number between 1 to 100
+//        String  primeNumbers = "";
+//        for (int i = 1; i <= 100; i++)
+//        {
+//            int counter=0;
+//            for(int num =i; num>=1; num--)
+//            {
+//                if(i%num==0)
+//                {
+//                    counter = counter + 1;
+//                }
+//            }
+//            if (counter ==2)
+//            {
+//                primeNumbers = primeNumbers + i + " ";
+//            }
+//        }
+//        System.out.println("Prime numbers 1 to 100 : "+primeNumbers);
 
-        for(int i=2;i<n;i++){
-            if(n%i == 0)
-                isPrime = false;
-            else
-                isPrime = true;
-        }
-        if(isPrime == true)
-            System.out.println("Prime");
-        else
-            System.out.println("Not prime");
+
+//        count digits in a number
+//        int n = 4324223, c = 0;
+//
+//        while(n > 0){
+//
+//            c++;
+//            n = n/10;
+//
+//
+//        }
+//        System.out.println(c);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
+
 }
