@@ -88,16 +88,16 @@ public class playGround1 {
 
 
 //        count digits in a number
-//        int n = 4324223, c = 0;
-//
-//        while(n > 0){
-//
-//            c++;
-//            n = n/10;
-//
-//
-//        }
-//        System.out.println(c);
+        int n = 4324223, c = 0;
+
+        while(n > 0){
+
+            c++;
+            n = n/10;
+
+
+        }
+        System.out.println(c);
 
 
 
