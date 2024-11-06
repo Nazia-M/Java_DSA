@@ -3,7 +3,7 @@ package numberPrograms;
 public class ReverseNumber {
     public static void main(String[] args) {
 
-        int n = -5436587,rev=0,rem=0;
+        int n = -549,rev=0,rem=0;
         boolean negative = false;
 
         if(n < 0)
