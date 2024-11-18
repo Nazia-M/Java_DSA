@@ -63,9 +63,62 @@ public class playGroundNumbers {
 //        }
 
 
+        //Fibo
+
+//        int series= 15, n1 = 0, n2= 1;
+//
+//        for(int i=0;i<series;i++)
+//        {
+//            System.out.println("seriea "+n1);
+//            int n3 = n1+n2;
+//            n1 = n2;
+//            n2 = n3;
+//
+//        }
+
+
+//        String str = "java is very easy";
+//        String[] words  = str.split(" ");
+//        String firstUpper  = "";
+//        for (int i=0;i<words.length;i++) {
+//
+//            char c = words[i].charAt(0);
+//
+//            String sub = words[i].substring(1);
+//
+//            firstUpper = firstUpper + Character.toUpperCase(c) + sub + " ";
+//        }
+//        System.out.println(firstUpper);
 
 
 
+            int num= 999;
+            System.out.println("Armstrong Number up to "+ num + " are: ");
+            for(int i=0; i<=num; i++)
+                if(isArmstrong(i))
+                    System.out.print(i+ ", ");
 
+    }
+
+
+    static boolean isArmstrong(int n)
+    {
+        int temp, digits=0, last=0, sum=0;
+        temp=n;
+        while(temp>0)
+        {
+            temp = temp/10;
+            digits++;
+        }
+        temp = n;
+        while(temp>0)
+        {
+            last = temp % 10;
+            sum +=  (Math.pow(last, digits));
+            temp = temp/10;
+        }
+        if(n==sum)
+            return true;
+        else return false;
     }
 }
