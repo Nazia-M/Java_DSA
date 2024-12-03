@@ -123,7 +123,26 @@ public class RemoveDuplciateCharsFromString {
 //        System.out.println("Number of words " + totalWord);
 
 
+//        String str = "     Geeks     for Geeks     ";
+//        str = str.replaceAll("\\s", "");
+//        System.out.println(str);
 
+
+//        String s = "    Geeks     for Geeks     ";
+//        String a = "";
+//
+//        for (int i = 0; i < s.length(); i++)
+//        {
+//            char c = s.charAt(i);
+//            if (!Character.isWhitespace(c))
+//            {
+//                a = a+c;
+//            }
+//        }
+//        System.out.println(a);
+
+        String s = " Hey! Let us learn Java! ";
+        System.out.println(s.trim());
 
 
 
