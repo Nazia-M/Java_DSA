@@ -85,6 +85,44 @@ public class RemoveDuplciateCharsFromString {
 //
 //        }
 
+//        String str = "gekin";
+//        HashSet<Character> set = new HashSet<>();
+//        boolean isDuplciate = false;
+//        for (int i = 0; i < str.length(); i++)
+//        {
+//            char c = str.charAt(i);
+//            if (set.contains(c))
+//            {
+//                System.out.println("Contains duplicate characters "+c);
+//                isDuplciate = true;
+//                break;
+//            }
+//            set.add(c);
+//        }
+//        if(isDuplciate == false)
+//            System.out.println("No duplicate characters");
+
+
+
+
+//        String str = "Tutorials Point Welcomes You!! ab";
+//        int count = 1;
+//        for (int i = 0; i < str.length(); i++)
+//        {
+//            if ((str.charAt(i) == ' ') && (str.charAt(i + 1) != ' '))
+//            {
+//                count++;
+//            }
+//        }
+//        System.out.println("Count "+count);
+
+
+//        String str = "Tutorials Point Welcomes You!! ";
+//        String[] arrayStr = str.split(" ");
+//        int totalWord = arrayStr.length;
+//        System.out.println("Number of words " + totalWord);
+
+
 
 
 
