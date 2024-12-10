@@ -141,8 +141,26 @@ public class RemoveDuplciateCharsFromString {
 //        }
 //        System.out.println(a);
 
-        String s = " Hey! Let us learn Java! ";
-        System.out.println(s.trim());
+        String str = " Hey! Let us learn Java! ";
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+
+        for (int i=0;i<str.length();i++)
+        {
+            char ch = str.charAt(i);
+            if (map.containsKey(ch))
+                map.put(ch, map.get(ch) + 1);
+            else
+                map.put(ch, 1);
+        }
+
+        Iterator<Character> it = map.keySet().iterator();
+        while(it.hasNext())
+        {
+            char key = it.next();
+            int value = map.get(key);
+            System.out.println("Key "+key+" Value "+value);
+        }
+
 
 
 
