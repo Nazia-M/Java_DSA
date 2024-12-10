@@ -46,22 +46,37 @@ public class StringHacker {
 
 
 
-        String str= "Pramod", nstr="";
-        char ch;
-
-        System.out.print("Original word: ");
-        System.out.println("Pramod"); //Example word
-
-        for (int i=0; i<str.length(); i++)
-        {
-            ch= str.charAt(i); //extracts each character
-            nstr= ch+nstr; //adds each character in front of the existing string
-        }
-        System.out.println("Reversed word: "+ nstr);
-
-
+//        String str= "Pramod", nstr="";
+//        char ch;
+//
+//        System.out.print("Original word: ");
+//        System.out.println("Pramod"); //Example word
+//
+//        for (int i=0; i<str.length(); i++)
+//        {
+//            ch= str.charAt(i); //extracts each character
+//            nstr= ch+nstr; //adds each character in front of the existing string
+//        }
+//        System.out.println("Reversed word: "+ nstr);
 
 
+        String str = "Hello";
+        String str0 = "Hello";
+        StringBuffer str1 = new StringBuffer("Hello");
+        StringBuffer str11 = new StringBuffer("Hello");
+        StringBuilder str2 = new StringBuilder("Hello");
+
+
+        if(str.equals(str0))
+            System.out.println("str str0");
+        if(str.equals(str1))
+            System.out.println("str str1");
+        if(str1.equals(str11))
+            System.out.println("str1 str11");
+        if(str1.equals(str2))
+            System.out.println("str1 str2");
+        if(str.equals(str2))
+            System.out.println("str str2");
 
 
 
