@@ -32,6 +32,20 @@ public class ReverseChar {
         System.out.println("Reversed word: "+ nstr);
 
 
+        String str2 = "java I is very easy";
+        String newStr  = "";
+        String words[] = str2.split(" ");
+
+        for (int i=0;i<words.length;i++)
+        {
+            char ch = words[i].charAt(0);
+            ch = Character.toUpperCase(ch);
+            String subString = words[i].substring(1);
+            newStr = newStr + ch + subString + " ";
+        }
+        System.out.println(newStr);
+
+
 
     }
 }
