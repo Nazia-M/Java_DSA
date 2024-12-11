@@ -47,5 +47,32 @@ public class ReverseChar {
 
 
 
+
+        String str4 = "Hello maTe!";
+        String result ="";
+        char ch = ' ';
+        for (int i = 0; i < str4.length(); i++)
+        {
+            if (str4.charAt(i) >= 'A' && str4.charAt(i) <= 'Z')
+                ch = (char)(str4.charAt(i) + 32);
+            else if (str4.charAt(i) >= 'a' && str4.charAt(i) <= 'z')
+                ch = (char)(str4.charAt(i) - 32);
+            else
+                ch = (char)(str4.charAt(i));
+
+            result = result + ch;
+        }
+        System.out.println(result);
+
+
+
+        char ch1 = 'a';
+        int c = ch1;
+        System.out.println("ch1 "+ch1+" c "+c);
+
+        char ch2 = (char)c;
+        System.out.println("ch2 "+ch2);
+
+
     }
 }
