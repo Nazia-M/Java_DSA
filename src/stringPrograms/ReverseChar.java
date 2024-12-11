@@ -21,6 +21,16 @@ public class ReverseChar {
         StringBuffer sf = new StringBuffer(str);
         System.out.println(sf.reverse());
 
+        String str1 = "Apple for you?";
+        String nstr="";
+
+        for (int i=0; i<str1.length(); i++)
+        {
+            char ch= str1.charAt(i);
+            nstr= ch+nstr;
+        }
+        System.out.println("Reversed word: "+ nstr);
+
 
 
     }
