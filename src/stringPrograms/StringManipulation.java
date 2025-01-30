@@ -1,5 +1,7 @@
 package stringPrograms;
 
+import java.util.Arrays;
+
 public class StringManipulation {
 
     public static void main(String[] args) {
@@ -42,6 +44,24 @@ public class StringManipulation {
         //Replace all spaces with nothing
         String str2 = "     hello      world   ";
         System.out.println(str2.replace(" ",""));
+
+
+        //Substring
+        String msg = "my order id is 2545435";
+        System.out.println(msg.substring(6));
+        System.out.println(msg.substring(0,10));
+        System.out.println(msg.substring(msg.indexOf("is")+2, msg.length()).trim());
+
+        //Split
+        String lang = "java+python_ruby_javascript";
+        String lg[] = lang.split("_");
+
+        System.out.println(lg[0]);
+        System.out.println(Arrays.toString(lg));
+
+        String top = "xXtestingxXautomationxXseleniumxXapplicationX";
+        String tp[] = top.split("xX");
+        System.out.println(tp[0]);
 
 
 
