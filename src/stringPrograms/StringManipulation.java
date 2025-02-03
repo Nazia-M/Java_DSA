@@ -61,8 +61,20 @@ public class StringManipulation {
 
         String top = "xXtestingxXautomationxXseleniumxXapplicationX";
         String tp[] = top.split("xX");
-        System.out.println(tp[0]);
+        System.out.println(tp[0].length());  //Showing nothin because itheir is nothing to first left of xX
+        System.out.println(tp[1]);
+        System.out.println(tp[2]);
+        System.out.println(tp[3]);
+        System.out.println(tp[4]);
+        System.out.println(Arrays.toString(tp));
 
+        String pop = "testing | automation | selenium | LoginPage";
+        String p[] = pop.split("|");
+        System.out.println(p[0]);  // O/P t java is taking it as OR operator that's why it is not coming. To treat | as normal charactor use escape charactor \\|
+
+        String pop1 = "testing | automation | selenium | LoginPage";
+        String p1[] = pop1.split("\\|");
+        System.out.println(p1[0]);
 
 
 
